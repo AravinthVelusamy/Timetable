@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_monday"
+            android:icon="@drawable/ic_today_black_24dp"
+            android:title="Monday" />
+        <item
+            android:id="@+id/nav_tuesday"
+            android:icon="@drawable/ic_today_black_24dp"
+            android:title="Tuesday" />
+        <item
+            android:id="@+id/nav_wednesday"
+            android:icon="@drawable/ic_today_black_24dp"
+            android:title="Wednesday" />
+        <item
+            android:id="@+id/nav_thursday"
+            android:icon="@drawable/ic_today_black_24dp"
+            android:title="Thursday" />
+        <item
+            android:id="@+id/nav_friday"
+            android:icon="@drawable/ic_today_black_24dp"
+            android:title="Friday" />
+    </group>
+
+
+</menu>

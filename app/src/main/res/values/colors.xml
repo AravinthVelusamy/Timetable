@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#3897F0</color>
+    <color name="analogous2">#ee7802</color>
+    <color name="triadic1">#eeee02</color>
+    <color name="triadic2">#02ee02</color>
+    <color name="colorPrimary">#FFF</color>
+    <color name="colorPrimaryLight">#FFF</color>
+    <color name="colorPrimaryDark">#CCCCCC</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorliteWhite">#FCFCFC</color>
+    <color name="grey">#ceced2</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorPrimaryPix">#007AFF</color>
+    <color name="colorPrimaryPixLight">#69a8ff</color>
+    <color name="colorPrimaryPixDark">#004fcb</color>
+    <color name="colorSecondary">#69a8ff</color>
+    <color name="colorSecondaryLight">#ff745b</color>
+    <color name="colorSecondaryDark">#c30005</color>
+    <color name="colorAppleGrey">#cdcdd2</color>
+    <color name="colorAppleLightBlue">#1badf8</color>
+    <color name="colorAppleBlue">#007AFF</color>
+    <color name="colorAppleBlueLight">#69a8ff</color>
+    <color name="colorAppleBlueDark">#004fcb</color>
+    <color name="colorSnapBlue">#42C0FB</color>
+</resources>

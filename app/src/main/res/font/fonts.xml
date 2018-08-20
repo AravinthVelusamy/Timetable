@@ -3,9 +3,5 @@
     <font
         android:fontStyle="normal"
         android:fontWeight="400"
-        android:font="@font/poppinsregular" />
-    <font
-        android:fontStyle="italic"
-        android:fontWeight="400"
-        android:font="@font/poppinsitalic" />
+        android:font="@font/nunitolight" />
 </font-family>

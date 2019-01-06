@@ -1,48 +1,200 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     tools:context=".tuesday.TuesdayFragment">
 
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:elevation="2dp"
+        app:cardCornerRadius="2dp">
 
     <TextView
-        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:paddingStart="24dp"
+        android:paddingTop="24dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="16dp"
+        android:text="Schedule for Tuesday"
+        android:textSize="20sp" />
+
+    <TableLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/schedule_for_tuesday"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="64dp"
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/clt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txt">
+        >
 
-        <TableLayout
+        <TableRow
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:layout_height="wrap_content">
 
-            <TableRow>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical|end"
+                android:paddingLeft="24dp"
+                android:paddingRight="56dp"
+                android:text="Timings"
+                android:textSize="12sp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/timings"
-                    android:textColor="@color/colorBlack" />
+            <TextView
+                android:id="@+id/subhead"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical|start"
+                android:paddingLeft="12dp"
+                android:paddingRight="24dp"
+                android:text="Subject"
+                android:textSize="12sp" />
+        </TableRow>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/subjects"
-                    android:textColor="@color/colorBlack" />
+        <View
+            android:id="@+id/firstDivider"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#EDEDED" />
+        <TableRow android:layout_height="wrap_content">
 
-            </TableRow>
-        </TableLayout>
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:gravity="center_vertical|end"
+                android:paddingLeft="24dp"
+                android:paddingRight="56dp"
+                android:text="09:30-10:30"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/sp"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:gravity="center_vertical|start"
+                android:paddingLeft="12dp"
+                android:paddingRight="24dp"
+                android:text="PROJECT"
+                android:textSize="13sp" />
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#EDEDED" />
+
+        <TableRow android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:gravity="center_vertical|end"
+                android:paddingLeft="24dp"
+                android:paddingRight="56dp"
+                android:text="10:45-11:45"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tp"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:gravity="center_vertical|start"
+                android:paddingLeft="12dp"
+                android:paddingRight="24dp"
+                android:text="ELECTIVE"
+                android:textSize="13sp" />
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#EDEDED" />
+
+        <TableRow android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical|end"
+                android:paddingLeft="24dp"
+                android:paddingRight="56dp"
+                android:text="01:40-02:40"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/fifthp"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical|start"
+                android:paddingLeft="12dp"
+                android:paddingRight="24dp"
+                android:text="PROJECT"
+                android:textSize="13sp" />
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#EDEDED" />
+
+        <TableRow android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical|end"
+                android:paddingLeft="24dp"
+                android:paddingRight="56dp"
+                android:text="02:40-03:40"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/sixthp"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical|start"
+                android:paddingLeft="12dp"
+                android:paddingRight="24dp"
+                android:text="ELECTIVE"
+                android:textSize="13sp" />
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#EDEDED" />
+
+        <TableRow android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical|end"
+                android:paddingLeft="24dp"
+                android:paddingRight="56dp"
+                android:text="03:40-04:40"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/seventhp"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical|start"
+                android:paddingLeft="12dp"
+                android:paddingRight="24dp"
+                android:text="ELECTIVE"
+                android:textSize="13sp" />
+        </TableRow>
+
+
+    </TableLayout>
+    </com.google.android.material.card.MaterialCardView>
+</FrameLayout>

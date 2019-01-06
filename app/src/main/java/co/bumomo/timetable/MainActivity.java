@@ -3,6 +3,7 @@ package co.bumomo.timetable;
 import android.os.Bundle;
 
 import android.view.View;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     View wednesdayMenu;
     View thursdayMenu;
     View fridayMenu;
+    TextView days;
     boolean isVisible = false;
 
     @Override
@@ -31,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         menu = findViewById(R.id.cv);
+        days = findViewById(R.id.text_days);
         mondayMenu = findViewById(R.id.cl1);
         tuesdayMenu = findViewById(R.id.cl2);
         wednesdayMenu = findViewById(R.id.cl3);
@@ -63,22 +66,27 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.cl1) {
             menu.setVisibility(View.INVISIBLE);
             isVisible = !isVisible;
+            days.setText("Monday");
             fragment = new MondayFragment();
         } else if (id == R.id.cl2) {
             menu.setVisibility(View.INVISIBLE);
             isVisible = !isVisible;
+            days.setText("Tuesday");
             fragment = new TuesdayFragment();
         } else if (id == R.id.cl3) {
             menu.setVisibility(View.INVISIBLE);
             isVisible = !isVisible;
+            days.setText("Wednesday");
             fragment = new WednesdayFragment();
         } else if (id == R.id.cl4) {
             menu.setVisibility(View.INVISIBLE);
             isVisible = !isVisible;
+            days.setText("Thursday");
             fragment = new ThursdayFragment();
         } else if (id == R.id.cl5) {
             menu.setVisibility(View.INVISIBLE);
             isVisible = !isVisible;
+            days.setText("Friday");
             fragment = new FridayFragment();
         }
         if (fragment != null) {

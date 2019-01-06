@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         wednesdayMenu.setOnClickListener(menuListener);
         thursdayMenu.setOnClickListener(menuListener);
         fridayMenu.setOnClickListener(menuListener);
+        displaySchedule(R.id.cl1);
     }
 
     @Override
